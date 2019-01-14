@@ -1,0 +1,56 @@
+body {
+	font-family: 'Reem Kufi' sans-serif;
+}
+
+#loteria {
+	background-color: #E0C5A1;
+	color: #323232;
+	text-align: center;
+	border-radius: 45px;
+	border: 25px solid #EBAB6D;
+}
+
+#loteria h1{
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 8em;
+	letter-spacing: -9px;
+}
+
+.card-deck {
+	margin-bottom: 15px;}
+
+.card-body {
+	padding: 0.1;
+	background-color: #918E95;
+}
+
+.card {
+	background-color: #918E95;
+}
+
+.cover {
+/*   object-fit: cover;
+*/   width: 100%;
+   height: 670px;
+}
+
+.overlay {
+	display: none;
+}
+
+.card:hover .overlay {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    position:absolute;
+    top:0;
+    left:0;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    text-align:center;
+    color:white;
+    padding:12px;
+    font-size:20px;
+}

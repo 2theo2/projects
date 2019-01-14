@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	width: 100%;
+	color: #222;
+}
+
+
+
+.navbar-brand {
+    position: relative;
+    background: url(../images/logo.png);
+    width: 170px;
+    left: 15px;
+    max-height: 70px;
+    background-size: contain;
+}
+
+.underline {
+	text-decoration: underline; 
+}
+
+.parallax {
+	background-image: url("steps.jpg");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.carousel-inner {
+	height: 800px;
+	overflow: hidden;
+}
+
+.w-100 {
+	max-height: 780px;
+	object-fit: contain;
+}
+
+.paragraph-text{
+	font-size: 20px;
+}
+
+.blue {
+	color: #3bc7e8;
+}
+/*.banner {
+	    max-height: 700px;
+}*/

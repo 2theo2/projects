@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+
+    <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+
+    <h2>Thank you for coming by. Make a choice to play.</h2>
+
+    <h3>If you don't know how to play, click <a href="https://www.youtube.com/watch?v=cSLeBKT7-sM">here</a>.</h3>
+
+
+        <button onclick="rock()" class="btn btn-secondary">Rock</button> 
+        <button onclick="paper()" class="btn btn-light">Paper</button> 
+        <button onclick="scissors()" class="btn btn-warning">Scissors</button> 
+        <button onclick="lizard()" class="btn btn-success">Lizard</button> 
+        <button onclick="spock()" class="btn btn-primary">Spock</button> 
+
+    <p id="display"></p>
+
+    <script>
+
+        function rock() {
+            var computerChoice = Math.random(0,1);
+            if (computerChoice < 0.2) {
+                document.getElementById("display").innerHTML = "<h2>Rock vs Rock</h2><p>We Tie</p>";
+            } else if(computerChoice <= 0.4) {
+                document.getElementById("display").innerHTML = "<h2>Rock is covered by Paper</h2><p>You Lose</p>";
+            } else if(computerChoice <= 0.6) {
+                document.getElementById("display").innerHTML = "<h2>Rock crushes Scissors</h2><p>You Win</p>"
+            } else if(computerChoice <= 0.8) {
+                document.getElementById("display").innerHTML = "<h2>Rock crushes Lizard</h2><p>You Win</p>";
+            } else {
+                document.getElementById("display").innerHTML = "<h2>Rock is vaporized by Spock</h2><p>You Lose</p>";
+            };
+        }
+
+
+        function paper() {
+            var computerChoice = Math.random(0,1);
+            if (computerChoice < 0.2) {
+                document.getElementById("display").innerHTML = "<h2>Paper covers Rock</h2><p>You Win</p>";
+            } else if(computerChoice <= 0.4) {
+                document.getElementById("display").innerHTML = "<h2>Paper vs Paper</h2><p>We Tie</p>";
+            } else if(computerChoice <= 0.6) {
+                document.getElementById("display").innerHTML = "<h2>Paper is cut by Scissors</h2><p>You Lose</p>"
+            } else if(computerChoice <= 0.8) {
+                document.getElementById("display").innerHTML = "<h2>Paper is eaten by Lizard</h2><p>You Lose</p>";
+            } else {
+                document.getElementById("display").innerHTML = "<h2>Paper disproves Spock</h2><p>You Win</p>";
+            };
+        }
+
+        function scissors() {
+            var computerChoice = Math.random(0,1);
+            if (computerChoice < 0.2) {
+                document.getElementById("display").innerHTML = "<h2>Scissors are crushed by Rock</h2><p>You Lose</p>";
+            } else if(computerChoice <= 0.4) {
+                document.getElementById("display").innerHTML = "<h2>Scissors cut Paper</h2><p>You Win</p>";
+            } else if(computerChoice <= 0.6) {
+                document.getElementById("display").innerHTML = "<h2>Scissors vs Scissors</h2><p>We Tie</p>"
+            } else if(computerChoice <= 0.8) {
+                document.getElementById("display").innerHTML = "<h2>Scissors decapitates Lizard</h2><p>You Win</p>";
+            } else {
+                document.getElementById("display").innerHTML = "<h2>Scissors are smashed by Spock</h2><p>You Lose</p>";
+            };
+        }
+
+
+        function lizard() {
+            var computerChoice = Math.random(0,1);
+            if (computerChoice < 0.2) {
+                document.getElementById("display").innerHTML = "<h2>Lizard is crushed by Rock</h2><p>You Lose</p>";
+            } else if(computerChoice <= 0.4) {
+                document.getElementById("display").innerHTML = "<h2>Lizard eats Paper</h2><p>You Win</p>";
+            } else if(computerChoice <= 0.6) {
+                document.getElementById("display").innerHTML = "<h2>Lizard is decapitated by Scissors</h2><p>You Lose</p>"
+            } else if(computerChoice <= 0.8) {
+                document.getElementById("display").innerHTML = "<h2>Lizard vs Lizard</h2><p>We Tie</p>";
+            } else {
+                document.getElementById("display").innerHTML = "<h2>Lizard poisons Spock</h2><p>You Win</p>";
+            };
+        }
+
+
+        function spock() {
+            var computerChoice = Math.random(0,1);
+            if (computerChoice < 0.2) {
+                document.getElementById("display").innerHTML = "<h2>Spock vaporizes Rock</h2><p>You Win</p>";
+            } else if(computerChoice <= 0.4) {
+                document.getElementById("display").innerHTML = "<h2>Spock is disproved by Paper</h2><p>You Lose</p>";
+            } else if(computerChoice <= 0.6) {
+                document.getElementById("display").innerHTML = "<h2>Spock smashes Scissors</h2><p>You Win</p>"
+            } else if(computerChoice <= 0.8) {
+                document.getElementById("display").innerHTML = "<h2>Spock is poisoned by Lizard</h2><p>You Lose</p>";
+            } else {
+                document.getElementById("display").innerHTML = "<h2>Spock vs Spock</h2><p>We Tie</p>";
+            };
+        }
+
+
+
+    </script>
+
+</div>
+
+</body>
+</html>
